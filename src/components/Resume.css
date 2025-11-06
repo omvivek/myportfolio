@@ -1,0 +1,187 @@
+.downloadcv-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffbd39;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  color: black !important;
+  text-decoration: none !important;
+  font-weight: bold;
+  
+}
+
+.downloadcv:visited,
+.downloadcv:active,
+.downloadcv:hover,
+.downloadcv:focus {
+  color: black !important;
+  background-color: #ffbd39 !important;
+  text-decoration: none !important;
+  outline: none !important;
+  border: none !important;
+}
+.downloadcv-p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.resume-header {
+    text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  padding-top: 70px;   
+  padding-bottom: 20px;
+}
+
+.resume-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    position: relative;
+  z-index: 2;
+}
+
+.resume-header h1.big {
+  position: absolute;
+  top: 80px;
+  left: 16%;
+  font-size: 8vw;
+  color: rgba(255, 255, 255, 0.1);
+  z-index: 0;
+  font-weight: 1000;
+  font-size: 60px;
+  
+}
+
+.resume-summary {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #939191;
+  position: relative;
+  z-index: 2;
+}
+
+.section-title {
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.experience-item,   .education-item {
+    margin-top: 20px;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  padding: 20px;
+}
+.experience-details, .education-details {
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.0);
+}
+.experience-duration, .education-duration {
+  font-weight: 1000;
+  color: #ffbd39;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+.experience-role, .education-degree {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.experience-company, .education-institution {
+  font-size: 20px;
+  font-weight: bold;
+  color: #939191;
+  font-family: 'Courier New', Courier, monospace;
+}
+.company-description, .institution-description {
+  font-size: 16px;
+   color: #939191;
+  margin-top: 10px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.experience-points, .education-points {
+  margin-top: 10px;
+   color: #939191;
+  padding-left: 30px;
+}
+.education-grade {
+  font-size: 16px;
+   color: #939191;
+  margin-top: 15px;
+  padding: 10px;
+}
+.section-divider {
+  height: 3px;
+  background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(244, 244, 125) 20%, rgb(238, 238, 36) 50%, #ffbd39 100%);
+  margin: 40px 0;
+  border: none;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  
+  .resume-container{
+    width: 80%;
+    margin-left: 9%;
+  }
+  .resume-header{
+    padding-top: 70px;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .resume-header h1.big {
+  
+  top: 85px;
+  left: 30%;
+  font-size: 5vw;
+  z-index: 0;
+  
+}
+.experience-section-for-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.experience-item,   .education-item {
+    margin: 20px;
+  width: 40%;
+}
+}
+
+@media (min-width: 1025px) {
+  
+  .resume-container{
+    width: 80%;
+    margin-left: 9%;
+  }
+  .resume-header{
+    padding-top: 50px;
+    width: 70%;
+    margin-left: 13%;
+  }
+  .resume-header h1.big {
+  top: 65px;
+  left: 32%;
+  font-size: 5vw;
+  z-index: 0;
+  
+}
+.experience-section-for-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+.experience-item,   .education-item {
+    margin: 20px;
+  width: 40%;
+}
+.section-title {
+  font-size: 42px;}
+}

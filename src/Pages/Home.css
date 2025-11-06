@@ -1,0 +1,154 @@
+/* RESET 
+div {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #111;
+}*/
+
+.body-div,
+.section,
+.home-div {
+  width: 100%;
+}
+
+.home-div {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-div > .text > p,
+h1 {
+  color: #ffbd39;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.home-div > .text > h1 > span {
+  color: white;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.text {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  order: 0;
+}
+
+.img-div {
+  order: 1;
+   display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#typing-animation {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+ /* border-right: 3px solid #ffbd39;  blinking cursor */
+  animation: typing 10s steps(50, end) infinite, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 25ch; 
+  }
+  100% {
+    width: 0ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-div {
+    display: flex;
+    justify-content: end;
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh69tNQtHQcfofMa6txWfMoskFMj04WKNP7rvgqp2DMhReoI-XmcK2x1cnobftcQS5RZdnv1TcgPSsnASJqW8lpOEmzgH6_F_FrQnO398KnEmorNvC5m1bOrE3EM_ABblnZaha4sbJVBhME-Q5DjX0DLYN_ux6BKTRnwMe5nfCM3McuFx1SaX25089P/s663/vivek-removebg-preview.png");
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 104px;
+    flex-direction: column;
+  }
+
+  .img-div {
+    display: none;
+  }
+
+  .text {
+    width: 100%;
+    text-align: center;
+  }
+  .text p {
+    text-align: start;
+    margin-left: 14%;
+  }
+  
+
+  .section {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .home-div {
+    display: flex;
+  }
+  .text {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    margin-left: 8%;
+  }
+  .text h1 {
+    font-size: 100px;
+  }
+  .img-div img {
+    width: 70%;   
+    
+  }
+  
+  
+}
+
+@media (min-width: 1025px) {
+  .section {
+    padding-top: 5%;
+  }
+  .home-div {
+    display: flex;
+  }
+  .text {
+    display: flex;
+    width: 100%;
+    align-items: start;
+    margin-left: 8%;
+  }
+  .text h1 {
+    font-size: 108px;
+  }
+  .img-div img {
+    width: 70%;
+   
+    
+  }
+}

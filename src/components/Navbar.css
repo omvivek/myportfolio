@@ -1,0 +1,166 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  place-items: normal;
+  width: 100%;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.navbar {
+  position: fixed;
+   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  color: white;
+  padding: 15px;
+  background: #111;   
+}
+
+
+.logo {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+/* Active link (currently selected tab) */
+.nav-links a.active {
+  color: #ffbd39;
+  text-decoration: none;
+  border-bottom: 2px solid #ffbd39;
+  
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  color: white;
+  text-decoration: none;
+  border-bottom: 2px solid #ffbd39;
+  
+}
+
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ----------- Media Queries ----------- */
+
+/* PHONE */
+@media (max-width: 600px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    display: none;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: end;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav-links.active {
+    display: block;
+    max-height: 300px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 6%;
+    padding: 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: block;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: end;
+  }
+  .logo {
+    margin-left: 5%;
+  }
+  .about {
+    margin-top: 15%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .nav-links {
+    display: flex !important;
+    margin-right: 6%;
+  }
+  .logo {
+    margin-left: 6%;
+  }
+ 
+}
