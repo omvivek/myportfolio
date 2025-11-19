@@ -10,9 +10,10 @@ class About extends Component {
             <div className="profile-img-wrapper">
               <img
                 className="profile-img rounded img-fluid b-shadow-a"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQZR1hY_BAmrxSS5rr_cHwxKlUATZft0i8PFj2TSorxJMjiNE6Bh9Z_1bioIQOfzaWnsO_6tTSqQbsXv26vZyZb5bCzjaL46jjJRB_9fZt5uZ-b2uCldNGnCYNyxCuVrPmU4Ojcv_0aA/s480/vivek.jpeg"
+                src="../omvivek.jpg"
                 alt="profile"
               />
+              {/* https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQZR1hY_BAmrxSS5rr_cHwxKlUATZft0i8PFj2TSorxJMjiNE6Bh9Z_1bioIQOfzaWnsO_6tTSqQbsXv26vZyZb5bCzjaL46jjJRB_9fZt5uZ-b2uCldNGnCYNyxCuVrPmU4Ojcv_0aA/s480/vivek.jpeg */}
             </div>
 
             <div className="profile-details">
@@ -20,9 +21,10 @@ class About extends Component {
               <p className="detail-item">
                 Job Role: Associate Technical Support
               </p>
-              <p className="detail-item">Experience: 7 Months</p>
+              <p className="detail-item">Experience: 6 Months</p>
               <p className="detail-item">Address: Hyderabad, India</p>
             </div>
+            <br />
           </div>
 
           <div className="skills-section">
@@ -69,12 +71,16 @@ class About extends Component {
             <h1 className="big">About Me</h1>
             <h2 className="about-title">About Me</h2>
             <p className="about-text">
-              Full-stack developer with solid expertise in React.js, JavaScript,
-              and Python. Skilled in building responsive UI, dynamic web
-              applications, and backend services using Spring Boot and Python.
-              Experienced through internships, certifications, and real-world
-              projects, including a published research project in computer
-              vision.
+              I’m a Computer Science Engineer from Sathyabama Institute of
+              Science and Technology (Batch of 2023). After graduation, I
+              completed an Industry Ready Certification in Full Stack
+              Development from NxtWave (July 2023 – April 2024), gaining
+              real-world experience in HTML , CSS, React and Python. I’m currently
+              working as an Associate – Technical Support at Tech Mahindra
+              (since May 2025), where I strengthen my problem-solving and
+              debugging skills. My goal is to move into a full-time Software
+              Development / Full Stack Developer role, contributing to modern,
+              user-centric web application
             </p>
           </div>
 

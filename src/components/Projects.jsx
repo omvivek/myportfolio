@@ -1,8 +1,21 @@
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Component } from "react";
 import "./Projects.css";
 
 class Projects extends Component {
   render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 800,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: true,
+    };
     return (
       <div className="projects-section">
         <div className="projects-header">
@@ -79,15 +92,24 @@ class Projects extends Component {
 
           <div className="project-card">
             <div className="project-videos">
-              <video
-                className="project-video"
-                src="/example.mp4"
-                controls
-                autoPlay
-                muted
-                loop
-                playsInline
-              />
+              <div className="carousel-container">
+                <Slider {...settings} className="slide">
+                  <div>
+                    <img
+                      src="/pre_trained.png"
+                      alt="pre_trained Model"
+                      className="carousel-img"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="/result.png"
+                      alt="result Model"
+                      className="carousel-img"
+                    />
+                  </div>
+                </Slider>
+              </div>
             </div>
 
             <h2 className="project-name">
@@ -114,7 +136,7 @@ class Projects extends Component {
           {" "}
           <a
             href="https://github.com/omvivek"
-            className="projects-button"
+            className="project-button"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -20,25 +20,48 @@ class Home extends Component {
               />
             </div>
             <div className="text">
-              <p>HELLO !</p>
+              <p id="typing-animation">HELLO !</p>
               <h1>
                 <span>I'm </span> Om Vivek
               </h1>
-              <h4 id="typing-animation">Associate Technical Support</h4>
+              <p className="text-para">
+                Aspiring Full Stack Developer passionate about building
+                efficient, scalable, and interactive web applications. Skilled
+                in React, JavaScript, and Python — currently working at Tech
+                Mahindra in a technical role and seeking full-time developer
+                opportunities.
+              </p>
+              <div className="text-button">
+                <a
+                  href="/OmVivekKollaResume.pdf"
+                  className="projects-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Resume
+                </a>
+                <a
+                  href="#projects"
+                  className="linkedin-button"
+                  rel="noopener noreferrer"
+                >
+                  Projects
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <div id="about" className="section">
-          <About/>
+          <About />
         </div>
         <div id="resume" className="section">
-          <Resume/>
+          <Resume />
         </div>
         <div id="projects" className="section">
-          <Projects/>
+          <Projects />
         </div>
         <div id="contact" className="section">
-          <Contact/>
+          <Contact />
         </div>
       </div>
     );

@@ -9,7 +9,6 @@
   color: black !important;
   text-decoration: none !important;
   font-weight: bold;
-  
 }
 
 .downloadcv:visited,
@@ -28,18 +27,18 @@
 }
 
 .resume-header {
-    text-align: center;
+  text-align: center;
   margin-bottom: 30px;
   position: relative;
-  padding-top: 70px;   
+  padding-top: 70px;
   padding-bottom: 20px;
 }
 
 .resume-title {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #ffffff;
-    position: relative;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  position: relative;
   z-index: 2;
 }
 
@@ -52,7 +51,6 @@
   z-index: 0;
   font-weight: 1000;
   font-size: 60px;
-  
 }
 
 .resume-summary {
@@ -63,6 +61,16 @@
   z-index: 2;
 }
 
+.certificate-summary {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #939191;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 .section-title {
   font-size: 28px;
   color: white;
@@ -70,118 +78,167 @@
   margin-bottom: 20px;
 }
 
-.experience-item,   .education-item {
-    margin-top: 20px;
+.experience-item,
+.education-item {
+  margin-top: 20px;
   margin-bottom: 30px;
   background: rgba(255, 255, 255, 0.1);
-  padding: 10px;
   border-radius: 8px;
   padding: 20px;
 }
-.experience-details, .education-details {
+.experience-details,
+.education-details {
   padding: 15px;
-  background: rgba(255, 255, 255, 0.0);
+  background: rgba(255, 255, 255, 0);
 }
-.experience-duration, .education-duration {
+.experience-duration,
+.education-duration {
   font-weight: 1000;
   color: #ffbd39;
   margin-bottom: 10px;
   font-size: 25px;
 }
-.experience-role, .education-degree {
+.experience-role,
+.education-degree {
   font-size: 22px;
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 5px;
 }
-.experience-company, .education-institution {
+.experience-company,
+.education-institution {
   font-size: 20px;
   font-weight: bold;
   color: #939191;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
-.company-description, .institution-description {
+.company-description,
+.institution-description {
   font-size: 16px;
-   color: #939191;
+  color: #939191;
   margin-top: 10px;
   line-height: 1.5;
   margin-bottom: 10px;
 }
-.experience-points, .education-points {
+.experience-points,
+.education-points {
   margin-top: 10px;
-   color: #939191;
+  color: #939191;
   padding-left: 30px;
 }
 .education-grade {
   font-size: 16px;
-   color: #939191;
+  color: #939191;
   margin-top: 15px;
   padding: 10px;
 }
 .section-divider {
   height: 3px;
-  background-image: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(244, 244, 125) 20%, rgb(238, 238, 36) 50%, #ffbd39 100%);
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255) 0%,
+    rgb(244, 244, 125) 20%,
+    rgb(238, 238, 36) 50%,
+    #ffbd39 100%
+  );
   margin: 40px 0;
   border: none;
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+.slick-dots li button:before {
+  color: #ffbd39 !important; /* gold color to match your accent */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #ffbd39 !important;
+  font-size: 24px;
+}
+
+/* === PDF Carousel Styling === */
+.carousel-pdf {
+  width: 100%;
+  height: 68vh; /* adjusts with viewport height */
+  border: none;
+  background: rgba(234, 14, 14, 0.05); /* subtle backdrop for loading state */
+  /*box-shadow: 0 4px 20px rgba(237, 9, 9, 0.897); */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+
+
+.slick-slide {
+  display: block !important;
+  line-height: 0;
   
-  .resume-container{
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .resume-container {
     width: 80%;
     margin-left: 9%;
   }
-  .resume-header{
+  .resume-header {
     padding-top: 70px;
     width: 70%;
     margin-left: 15%;
   }
   .resume-header h1.big {
-  
-  top: 85px;
-  left: 30%;
-  font-size: 5vw;
-  z-index: 0;
-  
-}
-.experience-section-for-items {
+    top: 85px;
+    left: 30%;
+    font-size: 5vw;
+    z-index: 0;
+  }
+  .experience-section-for-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-.experience-item,   .education-item {
+  .experience-item,
+  .education-item {
     margin: 20px;
-  width: 40%;
-}
+    width: 57%;
+    height: 50%;
+  }
+  .carousel-pdf {
+    height: 55vh; /* adjusts with viewport height */
+  }
 }
 
 @media (min-width: 1025px) {
-  
-  .resume-container{
+  .resume-container {
     width: 80%;
     margin-left: 9%;
   }
-  .resume-header{
+  .resume-header {
     padding-top: 50px;
     width: 70%;
     margin-left: 13%;
   }
   .resume-header h1.big {
-  top: 65px;
-  left: 32%;
-  font-size: 5vw;
-  z-index: 0;
-  
-}
-.experience-section-for-items {
+    top: 65px;
+    left: 32%;
+    font-size: 5vw;
+    z-index: 0;
+  }
+  .experience-section-for-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-.experience-item,   .education-item {
+  .experience-item,
+  .education-item {
     margin: 20px;
-  width: 40%;
-}
-.section-title {
-  font-size: 42px;}
+    width: 40%;
+  }
+  .section-title {
+    font-size: 42px;
+  }
+  .carousel-pdf {
+    height: 55vh; /* adjusts with viewport height */
+  }
 }

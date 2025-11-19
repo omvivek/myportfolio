@@ -1,8 +1,21 @@
 import { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./Resume.css";
 
 class Resume extends Component {
   render() {
+     const settings = {
+       dots: true,
+       infinite: true,
+       speed: 800,
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       autoplay: true,
+       autoplaySpeed: 3000,
+       arrows: true,
+     };
     return (
       <div className="resume-container">
         {/* ===== HEADER / INTRO ===== */}
@@ -111,6 +124,113 @@ class Resume extends Component {
               <h2 className="education-degree">Secondary School</h2>
               <h5 className="education-institution">Dr.K.K.R'S Gowtham</h5>
               <p className="education-grade">Grade: First Class Distinction</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="experience-section">
+          <h1 className="section-title">Certifications</h1>
+          <p className="certificate-summary">
+            Industry Ready Certification in Full-Stack Development – NxtWave
+            (Jul 2023 – Apr 2024)
+          </p>
+          <hr className="section-divider" />
+
+          <div className="experience-section-for-items">
+            {/* Experience 1 */}
+            <div className="experience-item">
+              <Slider {...settings}>
+                <div className="carousel-div">
+                  <iframe
+                    src="/SUQTOTFVIS.pdf"
+                    title="Build Your Own Static Website"
+                    className="carousel-pdf"
+                    width="100%"
+                    height="350px"
+                  />
+                </div>
+                <div>
+                  <iframe
+                    src="/RTBCHMJQTQ.pdf"
+                    title="Build Your Own Responsive Website"
+                    className="carousel-pdf"
+                    width="100%"
+                    height="330px"
+                  />
+                </div>
+                <div>
+                  <iframe
+                    src="/DHAJYEDGZU.pdf"
+                    title="Introduction to Databases"
+                    className="carousel-pdf"
+                    width="100%"
+                    height="330px"
+                  />
+                </div>
+                <div>
+                  <iframe
+                    src="/ADAGSEPOSN.pdf"
+                    title="Programming Foundations with Python"
+                    className="carousel-pdf"
+                    width="100%"
+                    height="330px"
+                  />
+                </div>
+                <div>
+                  <iframe
+                    src="/RTBCHMJQTQ.pdf"
+                    title="Build Your Own Responsive Website"
+                    className="carousel-pdf"
+                    width="100%"
+                    height="330px"
+                  />
+                </div>
+                <div>
+                  <iframe
+                    src="/UFEYOSOEYM.pdf"
+                    title="Developer Foundations"
+                    className="carousel-pdf"
+                    width="100%"
+                    height="330px"
+                  />
+                </div>
+                <div>
+                  <iframe
+                    src="/YVGSMENIOE.pdf"
+                    title="Build Your Own Dynamic Web Application"
+                    className="carousel-pdf"
+                    width="100%"
+                    height="330px"
+                  />
+                </div>
+                <div>
+                  <iframe
+                    src="/KFCKNFMLHJ.pdf"
+                    title="JavaScript Essentials"
+                    className="carousel-pdf"
+                    width="100%"
+                    height="330px"
+                  />
+                </div>
+                <div>
+                  <iframe
+                    src="/UAPMLEKLGX.pdf"
+                    title="Responsive Web Design using Flexbox"
+                    className="carousel-pdf"
+                    width="100%"
+                    height="330px"
+                  />
+                </div>
+                <div>
+                  <iframe
+                    src="/CRMFDJYOQC.pdf"
+                    title="React JS"
+                    className="carousel-pdf"
+                    width="100%"
+                    height="330px"
+                  />
+                </div>
+              </Slider>
             </div>
           </div>
         </div>

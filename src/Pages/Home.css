@@ -6,6 +6,20 @@ div {
   background: #111;
 }*/
 
+/* For Chrome, Edge, and Safari */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* For Firefox */
+body {
+  scrollbar-width: none; /* hides scrollbar but keeps scroll functionality */
+  -ms-overflow-style: none;
+}
+
+
+
 .body-div,
 .section,
 .home-div {
@@ -19,9 +33,14 @@ div {
   align-items: center;
 }
 
-.home-div > .text > p,
-h1 {
+.home-div > .text > h1 {
   color: #ffbd39;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.home-div > .text > p {
+  color: #ffffff;
   font-family: "Poppins", Arial, sans-serif;
   font-weight: bold;
 }
@@ -41,7 +60,7 @@ h1 {
 
 .img-div {
   order: 1;
-   display: flex;
+  display: flex;
   justify-content: start;
   align-items: center;
 }
@@ -50,10 +69,10 @@ h1 {
   position: relative;
   font-size: 20px;
   font-weight: bold;
-  color: white;
+  color: #ffbd39;
   overflow: hidden;
   white-space: nowrap;
- /* border-right: 3px solid #ffbd39;  blinking cursor */
+  /* border-right: 3px solid #ffbd39;  blinking cursor */
   animation: typing 10s steps(50, end) infinite, blink 0.7s step-end infinite;
 }
 
@@ -62,7 +81,7 @@ h1 {
     width: 0ch;
   }
   50% {
-    width: 25ch; 
+    width: 25ch;
   }
   100% {
     width: 0ch;
@@ -73,6 +92,54 @@ h1 {
   50% {
     border-color: transparent;
   }
+}
+
+.linkedin-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ffbd39;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  color: black !important;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+.linkedin-button:visited,
+.linkedin-button:active,
+.linkedin-button:hover,
+.linkedin-button:focus {
+  color: black !important;
+  background-color: #ffbd39 !important;
+  text-decoration: none !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.projects-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 100;
+}
+
+.text-button {
+  width: 100%;
+  background-color: transparent;
+}
+
+.text-para {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #939191;
 }
 
 @media (max-width: 600px) {
@@ -94,12 +161,23 @@ h1 {
   .text {
     width: 100%;
     text-align: center;
+    margin-top: 65%;
   }
   .text p {
     text-align: start;
     margin-left: 14%;
   }
-  
+
+  .text-para {
+    font-size: 8px;
+    margin: 5%;
+    display: none;
+  }
+
+  #forh {
+    color: #dfc083;
+    display: none;
+  }
 
   .section {
     padding: 20px;
@@ -120,14 +198,17 @@ h1 {
     margin-left: 8%;
   }
   .text h1 {
-    font-size: 100px;
+    font-size: 85px;
   }
+
+    .text-para {
+    font-size: 70%;
+    margin: 5%;
+  }
+
   .img-div img {
-    width: 70%;   
-    
+    width: 70%;
   }
-  
-  
 }
 
 @media (min-width: 1025px) {
@@ -144,11 +225,14 @@ h1 {
     margin-left: 8%;
   }
   .text h1 {
-    font-size: 108px;
+    font-size: 90px;
   }
+
+   .text-para {
+    font-size: 90%;
+  }
+
   .img-div img {
-    width: 70%;
-   
-    
+    width: 60%;
   }
 }
